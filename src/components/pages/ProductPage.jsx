@@ -11,16 +11,34 @@ const ProductPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  const loadProduct = async () => {
+const loadProduct = async () => {
     try {
       setLoading(true);
       setError("");
       // Load the first product (Id: 1) as our featured product
       const productData = await productService.getById(1);
+      
+      // Validate product data structure
+      if (!productData) {
+        throw new Error("Product data not found");
+      }
+      
+      // Ensure images array exists and has valid structure
+      if (!productData.images || !Array.isArray(productData.images)) {
+        console.warn("Product images not found or invalid, using empty array");
+        productData.images = [];
+      }
+      
       setProduct(productData);
     } catch (err) {
-      setError(err.message || "Failed to load product");
+      const errorMessage = err.message || "Failed to load product";
+      setError(errorMessage);
       console.error("Product loading error:", err);
+      
+      // Log additional context for image loading errors
+      if (errorMessage.includes("image") || errorMessage.includes("Image")) {
+        console.warn("Image loading issue detected. Check network connectivity and image URLs.");
+      }
     } finally {
       setLoading(false);
     }
