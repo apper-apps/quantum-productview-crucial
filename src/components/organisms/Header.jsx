@@ -14,7 +14,7 @@ const Header = ({ className = "" }) => {
           <div className="flex-shrink-0">
             <div className="flex items-center gap-2 hover:bg-amazon-dark hover:bg-opacity-20 p-2 rounded cursor-pointer transition-colors duration-200">
               <div className="text-2xl font-bold">
-                ProductView
+                Amazon
               </div>
               <span className="text-xs text-amazon-yellow">.com</span>
             </div>
