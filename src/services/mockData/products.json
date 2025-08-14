@@ -1,0 +1,33 @@
+[
+  {
+    "Id": 1,
+    "title": "Premium Wireless Bluetooth Headphones - High-Fidelity Audio with Active Noise Cancellation",
+    "brand": "AudioTech Pro",
+    "price": 199.99,
+    "originalPrice": 249.99,
+    "rating": 4.5,
+    "reviewCount": 2847,
+    "features": [
+      "Active Noise Cancellation technology for immersive listening experience",
+      "High-quality wireless connectivity with Bluetooth 5.0 for stable connection",
+      "Premium lightweight design with comfortable padding for extended wear",
+      "Long-lasting 30-hour battery performance with quick charging capability",
+      "Crystal-clear built-in microphone for hands-free calls and voice commands",
+      "Easy-to-use touch controls for music and call management",
+      "Comprehensive 2-year manufacturer warranty included for peace of mind"
+    ],
+    "images": [
+      "https://digitalaficionados.com/Mavwicks/1.jpg",
+      "https://digitalaficionados.com/Mavwicks/2.jpg",
+      "https://digitalaficionados.com/Mavwicks/3.jpg",
+      "https://digitalaficionados.com/Mavwicks/4.jpg",
+      "https://digitalaficionados.com/Mavwicks/5.jpg",
+      "https://digitalaficionados.com/Mavwicks/6.jpg",
+      "https://digitalaficionados.com/Mavwicks/7.jpg"
+    ],
+    "ebcImage": "https://digitalaficionados.com/Mavwicks/EBC.jpg",
+    "inStock": true,
+    "fastDelivery": true,
+    "primeEligible": true
+  }
+]

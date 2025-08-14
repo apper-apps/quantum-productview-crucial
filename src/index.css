@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Custom Toast Styling */
+.Toastify__toast {
+  @apply bg-white border border-amazon-light-gray shadow-lg;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  min-height: 48px;
+}
+
+.Toastify__toast--success {
+  @apply border-l-4 border-l-green-500;
+}
+
+.Toastify__toast--error {
+  @apply border-l-4 border-l-red-500;
+}
+
+.Toastify__toast--warning {
+  @apply border-l-4 border-l-yellow-500;
+}
+
+.Toastify__toast--info {
+  @apply border-l-4 border-l-blue-500;
+}
+
+.Toastify__progress-bar {
+  @apply bg-amazon-orange;
+}
+
+.Toastify__close-button {
+  @apply text-gray-500 hover:text-gray-700;
+}
+
+/* Smooth image transitions */
+.image-transition {
+  transition: opacity 200ms ease-out, transform 200ms ease-out;
+}
+
+/* Zoom overlay styles */
+.zoom-overlay {
+  position: absolute;
+  pointer-events: none;
+  border: 2px solid #146EB4;
+  background-color: rgba(20, 110, 180, 0.1);
+  backdrop-filter: blur(1px);
+  border-radius: 4px;
+  transition: all 100ms ease-out;
+}
+
+/* Star rating styles */
+.star-rating {
+  color: #FFA41C;
+}
+
+.star-empty {
+  color: #E6E6FA;
+}
+
+/* Amazon-style button animations */
+.amazon-button {
+  transition: all 150ms ease-out;
+}
+
+.amazon-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.amazon-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thumbnail hover effects */
+.thumbnail-hover {
+  transition: all 200ms ease-out;
+}
+
+.thumbnail-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Price styling */
+.price-symbol {
+  font-size: 0.8em;
+  vertical-align: top;
+  margin-top: 2px;
+}
+
+/* Header shadow on scroll */
+.header-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 200ms ease-out;
+}
+
+/* Responsive image container */
+.image-container {
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Zoom detail box */
+.zoom-detail {
+  background-size: 200%;
+  background-repeat: no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
