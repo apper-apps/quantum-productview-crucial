@@ -15,7 +15,7 @@ const ImageGallery = ({ images = [], className = "" }) => {
   // Fallback placeholder image
   const placeholderImage = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f3f4f6'/%3E%3Ctext x='200' y='200' text-anchor='middle' dy='.3em' fill='%23374151' font-family='Arial, sans-serif' font-size='16'%3EImage Unavailable%3C/text%3E%3C/svg%3E"
 
-const handleThumbnailClick = (index) => {
+  const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index)
   }
 
@@ -57,7 +57,7 @@ const handleThumbnailClick = (index) => {
     setImageLoadingStates(prev => ({ ...prev, [index]: true }))
   }
 
-if (!images || images.length === 0) {
+  if (!images || images.length === 0) {
     return (
       <div className={cn("flex items-center justify-center p-8 text-gray-500", className)}>
         <p>No images available</p>
@@ -183,5 +183,6 @@ if (!images || images.length === 0) {
       </div>
     </div>
   );
+}
 
 export default ImageGallery;
